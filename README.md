@@ -1,4 +1,3 @@
-# Anime-Recommender
 
 # Anime Finder
 
