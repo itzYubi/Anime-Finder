@@ -1,0 +1,26 @@
+<form #reccForm="ngForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="username">Name:</label>
+        <input type="text" id="user-name" [(ngModel)]="name" name="name" placeholder="Enter your Name" required>
+    </div>
+    <div class="form-control">
+        <label for="username">Email:</label>
+        <input [(ngModel)]="email" type="text" id="user-email"
+                       name="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-control">
+        <label for="username">Description:</label>
+        <textarea id="anime-description" [(ngModel)]="description" name="description"
+                       placeholder="Share your preferences or describe the type of anime you're seeking in a few words."
+                        required>
+        </textarea>
+    </div>
+    <div class="form-control">
+        <label for="username">Genre:</label>
+        <input type="text" [(ngModel)]="genre"
+                       id="anime-genre" name="genre" placeholder="Preferred Genres for Viewing">
+    </div>
+
+
+    <input type="submit" value="Get Recommendations!" class="btn btn-block">
+</form>
